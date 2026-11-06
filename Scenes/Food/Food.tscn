@@ -1,0 +1,12 @@
+[gd_scene format=3 uid="uid://dm0dtswkx7851"]
+
+[ext_resource type="PackedScene" uid="uid://dxtnkhtg1obys" path="res://Data/Items/Item.tscn" id="1_1qtg7"]
+[ext_resource type="Script" uid="uid://bv4fa3sfawm6a" path="res://Scenes/Food/food.gd" id="1_hw7qn"]
+[ext_resource type="Texture2D" uid="uid://ihir1odaigb5" path="res://icon.svg" id="3_tvqpf"]
+
+[node name="Food" unique_id=1531319588 instance=ExtResource("1_1qtg7")]
+script = ExtResource("1_hw7qn")
+
+[node name="Sprite" parent="." index="1" unique_id=1597267171]
+modulate = Color(0.023529412, 1, 0.45882353, 1)
+texture = ExtResource("3_tvqpf")

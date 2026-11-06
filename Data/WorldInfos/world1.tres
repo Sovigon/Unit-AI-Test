@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="WorldInfo" format=3 uid="uid://dsdd4bjseg1c8"]
+
+[ext_resource type="Script" uid="uid://dsgun7aam1bgh" path="res://Data/entityInfo.gd" id="1_qoieg"]
+[ext_resource type="Script" uid="uid://2ko6wiirdujj" path="res://Data/worldInfo.gd" id="1_qphy8"]
+[ext_resource type="Script" uid="uid://ddi5hs4vp2qdc" path="res://Data/itemInfo.gd" id="2_40o8b"]
+
+[resource]
+script = ExtResource("1_qphy8")
+name = "World1"
+world_size = Vector2(1600, 1600)
+metadata/_custom_type_script = "uid://2ko6wiirdujj"

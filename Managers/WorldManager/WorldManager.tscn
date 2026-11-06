@@ -1,0 +1,22 @@
+[gd_scene format=3 uid="uid://g64ekthe4wi3"]
+
+[ext_resource type="Script" uid="uid://bd8ahjjg23lti" path="res://Managers/WorldManager/worldManager.gd" id="1_yvlsa"]
+[ext_resource type="PackedScene" uid="uid://c6quw8bduhs32" path="res://Scenes/Noodle/Noodle.tscn" id="2_hvatb"]
+
+[node name="WorldManager" type="Node2D" unique_id=803543249]
+script = ExtResource("1_yvlsa")
+
+[node name="Entities" type="Node2D" parent="." unique_id=1699273401]
+
+[node name="Noodle" parent="Entities" unique_id=708178826 instance=ExtResource("2_hvatb")]
+
+[node name="Items" type="Node2D" parent="." unique_id=200259976]
+
+[node name="Camera2D" type="Camera2D" parent="." unique_id=536837305]
+zoom = Vector2(0.1, 0.1)
+
+[node name="FoodTimer" type="Timer" parent="." unique_id=1239580733]
+wait_time = 3.0
+autostart = true
+
+[connection signal="timeout" from="FoodTimer" to="." method="_on_food_timer_timeout"]

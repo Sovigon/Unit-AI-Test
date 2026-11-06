@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Behavior" format=3 uid="uid://ch08b1nar0awk"]
+
+[ext_resource type="Script" uid="uid://d0cnuif7pnc27" path="res://Data/behavior.gd" id="1_nqjcy"]
+
+[resource]
+script = ExtResource("1_nqjcy")
+name = "hunger"
+current_val = 35.0
+states = Array[String](["Full", "Normal", "Peckish", "Starving", "Ravenous"])
+thresholds = Array[float]([15.0, 45.0, 70.0, 95.0])
+metadata/_custom_type_script = "uid://d0cnuif7pnc27"

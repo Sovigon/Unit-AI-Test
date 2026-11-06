@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Behavior" format=3 uid="uid://bfkjp36pmxlog"]
+
+[ext_resource type="Script" uid="uid://d0cnuif7pnc27" path="res://Data/behavior.gd" id="1_l11mv"]
+
+[resource]
+script = ExtResource("1_l11mv")
+name = "danger"
+states = Array[String](["Safe", "Uneasy", "Danger", "Peril", "FLEE"])
+thresholds = Array[float]([40.0, 60.0, 85.0, 95.0])
+metadata/_custom_type_script = "uid://d0cnuif7pnc27"

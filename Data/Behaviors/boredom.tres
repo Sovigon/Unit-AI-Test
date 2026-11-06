@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="Behavior" format=3 uid="uid://cq2twe1kdsmms"]
+
+[ext_resource type="Script" uid="uid://d0cnuif7pnc27" path="res://Data/behavior.gd" id="1_ratoj"]
+
+[resource]
+script = ExtResource("1_ratoj")
+name = "boredom"
+states = Array[String](["Alert", "Attentive", "Normal", "Distracted", "Fidgety", "Uncontrollable"])
+thresholds = Array[float]([10.0, 30.0, 55.0, 70.0, 90.0])
+metadata/_custom_type_script = "uid://d0cnuif7pnc27"

@@ -1,0 +1,38 @@
+[gd_scene format=3 uid="uid://c6quw8bduhs32"]
+
+[ext_resource type="Script" uid="uid://df7l14my8rx3a" path="res://Scenes/Noodle/noodle.gd" id="1_avsvv"]
+[ext_resource type="Texture2D" uid="uid://ihir1odaigb5" path="res://icon.svg" id="2_3h15o"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_kv7dq"]
+size = Vector2(140, 140)
+
+[node name="Noodle" type="CharacterBody2D" unique_id=708178826]
+z_index = 1
+collision_layer = 4
+collision_mask = 15
+script = ExtResource("1_avsvv")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1439271242]
+shape = SubResource("RectangleShape2D_kv7dq")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=18410960]
+texture = ExtResource("2_3h15o")
+
+[node name="Labels" type="Node2D" parent="." unique_id=400262525]
+
+[node name="HungerLabel" type="Label" parent="Labels" unique_id=66795976]
+offset_left = -20.0
+offset_top = -103.0
+offset_right = 20.0
+offset_bottom = -80.0
+text = "Test"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Timers" type="Node2D" parent="." unique_id=1325352604]
+
+[node name="HungerTimer" type="Timer" parent="Timers" unique_id=21843101]
+wait_time = 5.0
+autostart = true
+
+[connection signal="timeout" from="Timers/HungerTimer" to="." method="_on_hunger_timer_timeout"]

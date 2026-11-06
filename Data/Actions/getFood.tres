@@ -1,0 +1,22 @@
+[gd_resource type="Resource" script_class="Action" format=3 uid="uid://dcfhk6antnf50"]
+
+[ext_resource type="Script" uid="uid://bxeqr0sk15myl" path="res://Data/behaveRequireElement.gd" id="1_2lkrt"]
+[ext_resource type="Script" uid="uid://bj8yprioqqhti" path="res://Data/action.gd" id="1_thxse"]
+
+[sub_resource type="Resource" id="Resource_vemfi"]
+script = ExtResource("1_2lkrt")
+name = "hunger"
+state = Dictionary[String, int]({
+"Peckish": 4,
+"Ravenous": 15,
+"Starving": 7
+})
+metadata/_custom_type_script = "uid://bxeqr0sk15myl"
+
+[resource]
+script = ExtResource("1_thxse")
+name = "getFood"
+behavior_requirements = Array[ExtResource("1_2lkrt")]([SubResource("Resource_vemfi")])
+resource_req = true
+resource_need_type = Array[int]([0])
+metadata/_custom_type_script = "uid://bj8yprioqqhti"

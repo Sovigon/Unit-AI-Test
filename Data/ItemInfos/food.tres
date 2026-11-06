@@ -1,0 +1,10 @@
+[gd_resource type="Resource" script_class="ItemInfo" format=3 uid="uid://dppca6nx645wh"]
+
+[ext_resource type="Script" uid="uid://ddi5hs4vp2qdc" path="res://Data/itemInfo.gd" id="1_7n673"]
+
+[resource]
+script = ExtResource("1_7n673")
+name = "food"
+consumable = true
+value = -25.0
+metadata/_custom_type_script = "uid://ddi5hs4vp2qdc"

@@ -1,0 +1,21 @@
+[gd_resource type="Resource" script_class="Action" format=3 uid="uid://dxdjpw1w2et5r"]
+
+[ext_resource type="Script" uid="uid://bj8yprioqqhti" path="res://Data/action.gd" id="1_dgwpg"]
+[ext_resource type="Script" uid="uid://bxeqr0sk15myl" path="res://Data/behaveRequireElement.gd" id="1_irqpd"]
+
+[sub_resource type="Resource" id="Resource_xedgk"]
+script = ExtResource("1_irqpd")
+name = "danger"
+state = Dictionary[String, int]({
+"Danger": 6,
+"FLEE": 20,
+"Peril": 10,
+"Uneasy": 1
+})
+metadata/_custom_type_script = "uid://bxeqr0sk15myl"
+
+[resource]
+script = ExtResource("1_dgwpg")
+name = "runAway"
+behavior_requirements = Array[ExtResource("1_irqpd")]([SubResource("Resource_xedgk")])
+metadata/_custom_type_script = "uid://bj8yprioqqhti"

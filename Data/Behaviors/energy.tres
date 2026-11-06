@@ -1,0 +1,11 @@
+[gd_resource type="Resource" script_class="Behavior" format=3 uid="uid://csv565j20uphe"]
+
+[ext_resource type="Script" uid="uid://d0cnuif7pnc27" path="res://Data/behavior.gd" id="1_vemfi"]
+
+[resource]
+script = ExtResource("1_vemfi")
+name = "energy"
+current_val = 50.0
+states = Array[String](["Depleted", "Sluggish", "Tired", "Normal", "Bouncy", "Energetic", "Zoomies"])
+thresholds = Array[float]([5.0, 20.0, 35.0, 60.0, 80.0, 95.0])
+metadata/_custom_type_script = "uid://d0cnuif7pnc27"
